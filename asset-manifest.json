@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/caglarconstruction/static/css/main.e6c13ad2.css",
+    "main.js": "/caglarconstruction/static/js/main.60a0d876.js",
+    "static/js/488.6be46801.chunk.js": "/caglarconstruction/static/js/488.6be46801.chunk.js",
+    "index.html": "/caglarconstruction/index.html",
+    "main.e6c13ad2.css.map": "/caglarconstruction/static/css/main.e6c13ad2.css.map",
+    "main.60a0d876.js.map": "/caglarconstruction/static/js/main.60a0d876.js.map",
+    "488.6be46801.chunk.js.map": "/caglarconstruction/static/js/488.6be46801.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.60a0d876.js"
+  ]
+}
