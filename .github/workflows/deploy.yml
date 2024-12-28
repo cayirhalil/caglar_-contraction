@@ -9,28 +9,27 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Depoyu kontrol et ve kodu indir
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Node.js sürümünü ayarla
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16 # Projenizin desteklediği bir Node.js sürümünü yazın
+          node-version: 16
 
-      # Bağımlılıkları yükle
       - name: Install dependencies
         run: npm install
 
-      # Projeyi build et
       - name: Build project
         run: CI=false npm run build
 
-      # GitHub Pages'e deploy et
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-
